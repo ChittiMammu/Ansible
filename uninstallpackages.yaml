@@ -1,4 +1,25 @@
-- name: "Uninstall packages"
+
+
+
+- name: "Uninstall nginx server"
+  hosts: web
+  become: true
+  tasks:
+    - name: "Uninstall packages"
+      apt:
+        name: nginx
+        state: absent
+    - name: "Stop nginx"
+      service:
+        name: nginx
+        state: stopped
+        enabled: no
+
+        apt-get remove nginx
+
+        
+        
+    - name: "Uninstall packages"
   apt:
     name: nginx
     state: absent
