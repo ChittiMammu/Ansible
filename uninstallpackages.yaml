@@ -1,7 +1,7 @@
 
 
 
-- name: "Uninstall nginx server"
+- name: "Uninstall apache server"
   hosts: web
   become: true
   tasks:
