@@ -1,6 +1,6 @@
 - name: variables from files
   hosts: Localhost
-  vars_file:
+  vars_files:
   - 06-vars-file.yaml
 
   tasks:
