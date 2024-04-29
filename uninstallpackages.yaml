@@ -1,26 +1,5 @@
 
-
-
-- name: "Uninstall apache server"
-  hosts: web
-  become: true
-  tasks:
-    - name: "Uninstall packages"
-      apt:
-        name: nginx
-        state: absent
-    - name: "Stop nginx"
-      service:
-        name: nginx
-        state: stopped
-        enabled: no
-
-        apt-get remove nginx
-
-        
-        
-    - name: "Uninstall packages"
-  apt:
+- name: Remove the nginx package
+  ansible.builtin.dnf:
     name: nginx
-    state: absent
-    autoremove: yes
+    state: remove
