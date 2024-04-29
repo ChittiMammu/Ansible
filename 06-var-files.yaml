@@ -4,6 +4,6 @@
   - 06-vars-file.yaml
 
   tasks:
-    - name: "print the information"
-      ansible.builtin.debug:
-        msg: "Hi, i am from {{Location}} joined at {{Collage}} in branch of {{Branch}}."
+  - name: "print the information"
+    ansible.builtin.debug:
+      msg: "Hi, i am from {{Location}} joined at {{Collage}} in branch of {{Branch}}."
