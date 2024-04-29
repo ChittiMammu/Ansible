@@ -1,0 +1,9 @@
+- name: variables from files
+  hosts: Localhost
+  vars_file:
+  - 06-vars-file.yaml
+
+  tasks:
+    - name: "print the information"
+      ansible.builtin.debug:
+        msg: "Hi, i am from {{Location}} joined at {{Collage}} in branch of {{Branch}}."
