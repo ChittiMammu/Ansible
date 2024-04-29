@@ -4,8 +4,8 @@
     course: "Terraform"
     Trainer: "mamatha"
     Duration: "15hrs"
-   tasks:
+  tasks:
 
-- name: print information
+  - name: print information
     ansible.builtin.debug:
       msg: "Hi,we are learning {{course}} from {{Trainer}}, Duration is {{Duration}}."
