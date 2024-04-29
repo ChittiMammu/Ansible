@@ -6,4 +6,4 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "Hi, i am from {{Location}} joined at {{Collage}}, in branch of {{Branch}}."
+      msg: "Hi, i am from {{Location}} joined at {{collage}}, in branch of {{Branch}}."
