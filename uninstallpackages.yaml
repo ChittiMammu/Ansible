@@ -1,5 +1,0 @@
-
-- name: Remove the nginx package
-  ansible.builtin.dnf:
-    name: nginx
-    state: remove
