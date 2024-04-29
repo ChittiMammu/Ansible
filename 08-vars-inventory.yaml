@@ -1,5 +1,5 @@
 - name: variable from inventory
-  hosts: localhost
+  hosts: web
   tasks:
   - name: print the information
     vars:
