@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: Localhost
+  hosts: localhost
   vars_files:
   - 06-vars-file.yaml
 
