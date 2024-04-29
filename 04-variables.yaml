@@ -8,5 +8,5 @@
 
   tasks:
   - name: print the given information
-      ansibile.builtin.debug:
+      ansible.builtin.debug:
         message: " i am learning {{course}} from {{Trainer}},Duration is {{Duration}}."    
