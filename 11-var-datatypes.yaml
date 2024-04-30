@@ -10,11 +10,11 @@
       Devops: 5
       AWS: 3
       Azure: 2
-    Realtime Experience: true
+    Realproject: true
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "Course: {{Course}}, Tools covered: {{Tools}}, Experience is: {{Experience}}, Realtime Experience is: {{Realtime Experience}}"
+      msg: "Course: {{Course}}, Tools covered: {{Tools}}, Experience is: {{Experience}}, RealProject is: {{RealProject}}"
 
 
 
