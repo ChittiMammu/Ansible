@@ -18,8 +18,3 @@
 
 
 
-# These are the DataTypes in Ansible 
-  # string
-  # list
-  # map
-  # boolean/Number(true or false)
