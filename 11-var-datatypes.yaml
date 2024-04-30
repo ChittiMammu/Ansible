@@ -1,0 +1,25 @@
+- name: data types
+  hosts: localhost
+  vars:
+    Course: Devops with AWS # string
+    Tools: #list
+    - Devops
+    - AWS
+    - Azure
+    Experience: # map or dictionary
+      Devops: 5
+      AWS: 3
+      Azure: 2
+    Realtime Experience: true
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Course: {{Course}}, Tools covered: {{Tools}}, Experience is: {{Experience}}, Realtime Experience is: {{Realtime Experience}}"
+
+
+
+
+  # string
+  # list
+  # map
+  # boolean/Number(true or false)
