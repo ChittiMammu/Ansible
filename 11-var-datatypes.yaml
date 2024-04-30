@@ -3,9 +3,9 @@
   vars:
     Course: DevOps with AWS # string
     Tools: # list
-    - DevOps
-    - AWS
-    - Azure
+    - Linux
+    - Shell
+    - Ansible
     Experience: # map or dictionary
       DevOps: 3
       AWS: 2
