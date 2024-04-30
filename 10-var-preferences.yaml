@@ -3,7 +3,7 @@
   tasks:
   vars:
     Name: "Mamatha"
-      msg: "Hi,my name is: {{ Name }}"
+      msg: "Hi,my name is: {{Name}}"
 
 - name: var from args
     msg: "Hi,my name is: {{ Name }}"
@@ -11,12 +11,13 @@
 - name: var from file
   vars_files:
   - 06-vars-file.yaml
-      msg: "Hi,my name is: {{ Name }}"
+      msg: "Hi,my name is: {{Name}}"
 
   vars_prompt:
   private: false
+- name: check preference
   ansible.builtin.debug:
-    msg: "Hi,my name is: {{ Name }}"
+    msg: "Hi,my name is: {{Name}}"
  
 
 
