@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     Course: Devops with AWS # string
-    Tools: #list
+    Tools: # list
     - Devops
     - AWS
     - Azure
@@ -10,7 +10,7 @@
       Devops: 5
       AWS: 3
       Azure: 2
-    Realproject: true
+    Realproject: true #boolean
   tasks:
   - name: print variables
     ansible.builtin.debug:
@@ -18,7 +18,7 @@
 
 
 
-
+# These are the DataTypes in Ansible 
   # string
   # list
   # map
