@@ -3,11 +3,11 @@
   vars:
     Course: DevOps with AWS # string
     Tools: # list
-    - Devops
+    - DevOps
     - AWS
     - Azure
     Experience: # map or dictionary
-      Devops: 3
+      DevOps: 3
       AWS: 2
       Azure: 1
     Realproject: true #boolean
