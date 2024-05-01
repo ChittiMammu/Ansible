@@ -46,10 +46,10 @@
 
 
 
-- name: converting dictonary into items
+- name: converting dictonary into items/list
   hosts: localhost
   vars:
-    my_dict: 
+    my_dict: #this is called as dictionary or map or key/value pairs.
       Course: Devops
       Duration: 120hrs
       Trainer: Mamatha
@@ -57,3 +57,6 @@
   - name: before convert
     ansible.builtin.debug:
       msg: "before convert: {{ my_dict }}"
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "after conver: {{ my_dict | dict2items }}"    
