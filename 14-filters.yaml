@@ -43,3 +43,17 @@
   - name: print min and max
     ansible.builtin.debug:
       msg: " min number: {{ numbers | min }}, max number: {{ numbers | max }}"
+
+
+
+- name: converting dictonary into items
+  hosts: localhost
+  vars:
+    my_dict: 
+      Course: Devops
+      Duration: 120hrs
+      Trainer: Mamatha
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "before convert: {{ my_dict }}"
