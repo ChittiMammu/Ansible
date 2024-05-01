@@ -5,7 +5,7 @@
   - name: install packages
     ansible.builtin.dnf:
       msg: " install {{ item }}"
-      state: Latest
+      state: latest
     loop:
     - Ansible
     - Nginx
